@@ -1,5 +1,7 @@
+pause
 
-python "D:\Developments\Git\greenbox\greenbox.py" greenbox.py
+
+python greenbox.py
 pause
 
 @echo off
