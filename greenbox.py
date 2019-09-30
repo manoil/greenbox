@@ -38,9 +38,7 @@ while commit_date < now:
         else:
             if commit_num < how_many_commit_this_time:
                 commit_num += 1
-                print('This is the ')
-                print("NO."+commit_num)
-                print('th commit')
+                print("NO."+str(commit_num))
             else:
                 print('======pushing=====')
                 how_many_commit_this_time = 0
