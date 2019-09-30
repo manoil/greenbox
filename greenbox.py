@@ -1,9 +1,10 @@
 import datetime
 import os
+import sys
 from random import randint
 
 min_commit_num = 20
-commit_range = 1
+commit_range = 50
 
 now = datetime.datetime.now()
 start = now.replace(year=2019)
@@ -38,10 +39,10 @@ while commit_date < now:
         else:
             if commit_num < how_many_commit_this_time:
                 commit_num += 1
-                print("NO."+str(commit_num))
+                print("NO." + str(commit_num))
             else:
-                print('======pushing=====')
+                print('\n============pushing============\n')
                 how_many_commit_this_time = 0
                 os.system('git push')
                 commit_num = 0
-                os.exit(0)
+                sys.exit(0)
