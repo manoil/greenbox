@@ -22,7 +22,7 @@ commit_date = (start + change_day())
 times = randint(60, 300)
 commit_num = 0
 how_many_commit_this_time = randint(min_commit_num + 1, min_commit_num + commit_range)
-print("We will make "+str(how_many_commit_this_time)+" submission this time!")
+print("We will make "+str(how_many_commit_this_time+1)+" submission this time!")
 
 while commit_date < now:
 
