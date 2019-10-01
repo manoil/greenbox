@@ -28,7 +28,7 @@ while commit_date < now:
 
     commit_date = commit_date + change_day()
     for i in range(times):
-        print("---NO." + str(commit_num + 1) + "commit---")
+        print("---NO." + str(commit_num + 1) + " commit---")
         f = open('data.txt', 'a+')
         commit_date = commit_date + change_time()
         f.writelines(commit_date.isoformat() + '\nWhat a nice day!\n')
