@@ -43,5 +43,5 @@ while commit_date < now:
             how_many_commit_this_time = 0
             os.system('git push')
             commit_num = 0
-            print("Finished!")
+            print("=======Finished!=======")
             sys.exit(0)
