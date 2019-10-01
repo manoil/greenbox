@@ -3,7 +3,8 @@ import os
 from random import randint
 
 now = datetime.datetime.now()
-start = now.replace(year=2016)
+start = now.replace(year=2019)
+
 
 
 def change_day():
@@ -16,6 +17,7 @@ def change_time():
 
 commit_date = (start + change_day())
 times = randint(60, 300)
+commit_num = 0
 
 while commit_date < now:
 
@@ -27,5 +29,7 @@ while commit_date < now:
         f.close()
         os.system('git add .')
         os.system('git commit --date={time} -m "Update {time}"'.format(time=commit_date.isoformat()))
-        os.system('git push')
-        
+        if commit_Num > randint(250, 300):
+            os.system('git push')
+        else:
+            commit_num = commit_num + 1
