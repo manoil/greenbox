@@ -1,8 +1,18 @@
 @echo off
+
+title=Green Box Auto Bat
 mode con cols=40 lines=20
 color 06
                                     
 echo ============GitHub Green Box============
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
 pause
 
 :running
@@ -11,5 +21,7 @@ python greenbox.py
 echo ---------------------------------------------------
 
 :end
-set /p input=Type 1 to restart the program, or others to exit: 
+echo Type 1 to restart the program
+echo or others to exit
+set /p input=:
 if "%input%"=="1" goto running

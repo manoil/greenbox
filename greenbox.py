@@ -39,7 +39,7 @@ while commit_date < now:
         if commit_num < how_many_commit_this_time:
             commit_num += 1
         else:
-            print('\n============pushing============\n')
+            print('\n===============pushing===============\n')
             how_many_commit_this_time = 0
             os.system('git push')
             commit_num = 0
