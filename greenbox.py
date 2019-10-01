@@ -37,9 +37,10 @@ while commit_date < now:
         else:
             if commit_num < how_many_commit_this_time:
                 commit_num += 1
-                os._exit(0)
+
 
             else:
                 how_many_commit_this_time = 0
                 os.system('git push')
                 commit_num = 0
+                os._exit(0)
