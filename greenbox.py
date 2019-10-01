@@ -42,6 +42,7 @@ while commit_date < now:
                 print('th commit')
 
             else:
+                print('======pushing=====')
                 how_many_commit_this_time = 0
                 os.system('git push')
                 commit_num = 0
