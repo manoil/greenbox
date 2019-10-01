@@ -33,11 +33,11 @@ while commit_date < now:
         os.system('git add .')
         os.system('git commit --date={time} -m "Update {time}"'.format(time=commit_date.isoformat()))
         if commit_num == min_commit_num:
-            how_many_commit_this_time = randint(min_commit_num + 1, min_commit_num+commit_range)
+            how_many_commit_this_time = randint(min_commit_num + 1, min_commit_num + commit_range)
         else:
             if commit_num < how_many_commit_this_time:
                 commit_num += 1
-                print('This is the '+commit_num+'th commit')
+                print('This is the ' + commit_num + 'th commit')
 
             else:
                 how_many_commit_this_time = 0
