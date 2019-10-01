@@ -6,7 +6,6 @@ now = datetime.datetime.now()
 start = now.replace(year=2019)
 
 
-
 def change_day():
     return datetime.timedelta(days=1, seconds=randint(0, 60), minutes=randint(0, 60), hours=randint(0, 24))
 
