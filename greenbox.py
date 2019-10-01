@@ -32,9 +32,10 @@ while commit_date < now:
         if commit_num == 250:
             how_many_commit_this_time = randint(251, 300)
         else:
-            if commit_num > how_many_commit_this_time:
+            if commit_num < how_many_commit_this_time:
+                commit_num += 1
+
+            else:
                 how_many_commit_this_time = 0
                 os.system('git push')
                 commit_num = 0
-            else:
-                commit_num = commit_num + 1
