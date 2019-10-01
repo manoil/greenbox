@@ -15,8 +15,8 @@ echo.
 echo.
 pause
 
-clear
 :running
+cls
 python greenbox.py
 
 :end
