@@ -37,7 +37,7 @@ while commit_date < now:
         else:
             if commit_num < how_many_commit_this_time:
                 commit_num += 1
-                os._exit()
+                os._exit(0)
 
             else:
                 how_many_commit_this_time = 0
