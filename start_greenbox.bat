@@ -15,6 +15,7 @@ echo.
 echo.
 pause
 
+clear
 :running
 python greenbox.py
 
