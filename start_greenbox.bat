@@ -22,7 +22,6 @@ python greenbox.py
 echo ---------------------------------------------------
 
 :end
-echo Type 1 to restart the program
-echo or others to exit
-set /p input=:
+echo Type "1" to restart the program
+set /p input=or others to exit:
 if "%input%"=="1" goto running
