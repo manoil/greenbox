@@ -34,13 +34,13 @@ while commit_date < now:
         os.system('git commit --date={time} -m "Update {time}"'.format(time=commit_date.isoformat()))
         if commit_num == min_commit_num:
             how_many_commit_this_time = randint(min_commit_num + 1, min_commit_num + commit_range)
+            commit_num += 1
         else:
             if commit_num < how_many_commit_this_time:
                 commit_num += 1
                 print('This is the ')
-                print(commit_num)
+                print("NO."+commit_num)
                 print('th commit')
-
             else:
                 print('======pushing=====')
                 how_many_commit_this_time = 0
