@@ -28,8 +28,8 @@ while commit_date < now:
         f.close()
         os.system('git add .')
         os.system('git commit --date={time} -m "Update {time}"'.format(time=commit_date.isoformat()))
-        if commit_num > 10:
-            if commit_num > randint(10, 20):
+        if commit_num > 250:
+            if commit_num > randint(250, 300):
                 os.system('git push')
                 commit_num = 0
         else:
