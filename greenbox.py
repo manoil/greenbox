@@ -24,8 +24,7 @@ while commit_date < now:
     for i in range(times):
         f = open('data.txt', 'a+')
         commit_date = commit_date + change_time()
-        f.writelines(commit_date.isoformat() + '\n'
-                     'Today is a nice day!\n')
+        f.writelines(commit_date.isoformat() + '\nToday is a nice day!\n')
         f.close()
         os.system('git add .')
         os.system('git commit --date={time} -m "Update {time}"'.format(time=commit_date.isoformat()))
