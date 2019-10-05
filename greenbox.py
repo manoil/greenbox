@@ -43,4 +43,4 @@ while commit_date < now:
                 how_many_commit_this_time = 0
                 os.system('git push')
                 commit_num = 0
-                os._exit(0)
+                os.exit(0)
