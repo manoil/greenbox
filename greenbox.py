@@ -35,5 +35,5 @@ while commit_date < now:
             if commit_num > randint(250, 300):
                 os.system('git push')
                 commit_num = 0
-        else:
-            commit_num = commit_num + 1
+            else:
+                commit_num = commit_num + 1
