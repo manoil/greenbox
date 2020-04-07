@@ -3,6 +3,8 @@ import os
 from random import randint
 
 min_commit_num=250
+commit_range=50
+
 now = datetime.datetime.now()
 start = now.replace(year=2019)
 
