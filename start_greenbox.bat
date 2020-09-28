@@ -1,5 +1,5 @@
 
-python "C:\Program Files\Python37\Lib\manim\manim.py" greenbox.py
+python "D:\Developments\Git\greenbox\greenbox.py" greenbox.py
 pause
 
 @echo off
