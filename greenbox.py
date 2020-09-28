@@ -22,13 +22,13 @@ commit_date = (start + change_day())
 times = randint(60, 300)
 commit_num = 0
 how_many_commit_this_time = randint(min_commit_num + 1, min_commit_num + commit_range)
-print("We will make "+str(how_many_commit_this_time+1)+" submission this time!")
+print("We will make " + str(how_many_commit_this_time + 1) + " submission this time!")
 
 while commit_date < now:
 
     commit_date = commit_date + change_day()
     for i in range(times):
-        print("---NO." + str(commit_num + 1) + " commit--- "+str(how_many_commit_this_time+1)+' in total.')
+        print(" commit: " + str(commit_num + 1) + " out of " + str(how_many_commit_this_time + 1))
         f = open('data.txt', 'a+')
         commit_date = commit_date + change_time()
         f.writelines(commit_date.isoformat() + '\nWhat a nice day!\n')
@@ -39,9 +39,9 @@ while commit_date < now:
         if commit_num < how_many_commit_this_time:
             commit_num += 1
         else:
-            print('\n================pushing================\n')
+            print('\n======================pushing======================\n')
             how_many_commit_this_time = 0
             os.system('git push')
             commit_num = 0
-            print("===============Finished!===============")
+            print("=====================Finished!=====================")
             sys.exit(0)
