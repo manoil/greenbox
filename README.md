@@ -1,6 +1,6 @@
 # greenbox
 
-Generate green box for fun ,just for fun.
+Generate green box for fun,just for fun.
 
 
 ## usage
@@ -10,6 +10,7 @@ Generate green box for fun ,just for fun.
 3. run `python greenbox.py`
 4. push
 
-## result
+## changes
 
-![result](result.png)
+* Add start_greenbox.bat, which can help you run this python program.
+* Auto upload.
